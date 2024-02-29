@@ -1,11 +1,11 @@
-# TGIRT-Seq pipeline
+# SnoRNA genomic organization pipeline
 
 __Author__ : Etienne Fafard-Couture
 
 __Email__ :  _<etienne.fafard-couture@usherbrooke.ca>_
 
 ## License
-TGIRT-Seq pipeline. Copyright (C) 2021  Étienne Fafard-Couture
+SnoRNA genomic organization pipeline. Copyright (C) 2021  Étienne Fafard-Couture
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
