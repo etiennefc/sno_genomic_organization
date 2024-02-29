@@ -47,11 +47,11 @@
   {
     "rnacentral_id_conversion": "https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/23.0/id_mapping/id_mapping.tsv.gz",
     "rfam_cm": "ftp://ftp.ebi.ac.uk/pub/databases/Rfam/14.10/Rfam.cm.gz",
-    "human_gtf": "",
-    "snoDB_bed": "",
-    "snoDB_data": "",
-    "sno_type_cerevisiae": "",
-    "sno_type_dieci": "",
-    "sno_type_rfam": ""
+    "human_gtf": "https://zenodo.org/records/10728180/files/Homo_sapiens.GRCh38.110_snoRNAs_tRNAs.gtf.gz",
+    "snoDB_bed": "https://zenodo.org/records/10728477/files/snoDB_BED.bed",
+    "snoDB_data": "https://zenodo.org/records/10728477/files/snoDB_data.tsv",
+    "sno_type_cerevisiae": "https://zenodo.org/records/10728477/files/saccharomyces_cerevisiae_snotype_umass.tsv",
+    "sno_type_dieci": "https://zenodo.org/records/10728477/files/dieci_et_al_2009_Genomics_summary.tsv",
+    "sno_type_rfam": "https://zenodo.org/records/10728477/files/snoRNA_type_rfam_families.tsv"
   }
 }

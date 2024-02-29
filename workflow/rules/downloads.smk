@@ -5,7 +5,9 @@ rule download_human_gtf:
     params:
         link = config['download']['human_gtf']
     shell:
-        "wget -O {output.gtf} {params.link} && "
+        "wget -O temp_gtf_homo_sapiens.gz {params.link} && "
+        "gunzip temp_gtf_homo_sapiens.gz && "
+        "mv temp_gtf_homo_sapiens {output.gtf} && "
         "sed -i 's/[\t]$//g' {output.gtf}"
 
 rule download_sno_type_info:
