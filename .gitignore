@@ -1,0 +1,3 @@
+data/
+workflow/.snakemake/
+workflow/results

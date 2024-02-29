@@ -1,0 +1,57 @@
+{
+  "species": ["homo_sapiens", "macaca_mulatta", "mus_musculus", "rattus_norvegicus", "ornithorhynchus_anatinus", 
+              "gallus_gallus", "danio_rerio", "xenopus_tropicalis", "caenorhabditis_elegans", "drosophila_melanogaster",  
+              "arabidopsis_thaliana", "oryza_sativa", "triticum_aestivum",  
+              "dictyostelium_discoideum", "giardia_lamblia", "tetrahymena_thermophila",
+              "schizosaccharomyces_pombe", "neurospora_crassa", "candida_albicans", "saccharomyces_cerevisiae"],
+  "taxon_id":
+  {
+    "homo_sapiens": 9606,
+    "macaca_mulatta": 9544,
+    "mus_musculus": 10090,
+    "rattus_norvegicus": 10116,
+    "ornithorhynchus_anatinus": 9258,
+    "gallus_gallus": 9031,
+    "danio_rerio": 7955,
+    "xenopus_tropicalis": 8364,
+    "caenorhabditis_elegans": 6239,
+    "drosophila_melanogaster": 7227,
+    "arabidopsis_thaliana": 3702,
+    "oryza_sativa": 4530,
+    "triticum_aestivum": 4565,
+    "tetrahymena_thermophila": 5911,
+    "dictyostelium_discoideum": 44689,
+    "giardia_lamblia": 50803,
+    "schizosaccharomyces_pombe": 4896,
+    "neurospora_crassa": 5141,
+    "candida_albicans": 5476,
+    "saccharomyces_cerevisiae": 4932
+  },
+  "colors":
+  {
+    "location_type":
+    {
+      "mono_intergenic": "#2166ac",
+      "intergenic_cluster": "#67a9cf",
+      "mono_intronic": "#c51b7d",
+      "intronic_cluster": "#e9a3c9",
+      "mono_exonic": "#d73027",
+      "exonic_cluster": "#f46d43"
+    }
+  },
+  "path":
+  {
+    "genome_v101": ""
+  },
+  "download":
+  {
+    "rnacentral_id_conversion": "https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/23.0/id_mapping/id_mapping.tsv.gz",
+    "rfam_cm": "ftp://ftp.ebi.ac.uk/pub/databases/Rfam/14.10/Rfam.cm.gz",
+    "human_gtf": "",
+    "snoDB_bed": "",
+    "snoDB_data": "",
+    "sno_type_cerevisiae": "",
+    "sno_type_dieci": "",
+    "sno_type_rfam": ""
+  }
+}

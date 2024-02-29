@@ -1,0 +1,35 @@
+import os, glob
+
+configfile: "../config/config.json"
+
+include: "rules/common.smk"
+include: "rules/downloads.smk"
+include: "rules/genomic_organization.smk"
+include: "rules/figures.smk"
+
+
+
+rule all:
+    """ Get the genomic organization of all annotated snoRNAs in selected species."""
+    input:
+        bar_chart = 'results/figures/sno_type_localization_animals.svg',
+        donut_animals = 'results/figures/donut_host_biotype_animals.svg',
+        final_df = 'results/localization/final_table.tsv'
+
+rule all_downloads:
+    """ Download all reference files needed to find the localization and 
+        box type of snoRNAs."""
+    input:
+        gtf = expand('data/references/gtf/{species}.gtf', **config),
+        ids = 'data/references/rnacentral_ids.tsv',
+        genome = expand('data/references/genome_fa/{species}_genome.fa', 
+                species=[i for i in config['species'] if i not in 
+                ['homo_sapiens', 'saccharomyces_cerevisiae']]),
+        rfam_cm = 'data/references/RFam.cm',
+        human_sno_bed = 'data/references/snoDB_BED.bed',
+        human_sno_type = 'data/references/snoDB_data.tsv',
+        yeast_sno_type = 'data/references/saccharomyces_cerevisiae_snotype_umass.tsv',
+        rfam_family_id_sno_type = 'data/references/snoRNA_type_rfam_families.tsv',
+        other_species_sno_type = 'data/references/dieci_et_al_2009_Genomics_summary.tsv'
+
+

@@ -1,0 +1,14 @@
+channels:
+  - default
+  - bioconda
+  - conda-forge
+  - pytorch
+dependencies:
+  - python = 3.10.8 
+  - matplotlib = 3.8.3
+  - numpy = 1.23.5
+  - pandas = 1.5.2
+  - scipy = 1.9.3
+  - seaborn = 0.12.1
+  - pybedtools = 0.9.0
+  - gtfparse = 1.2.1
