@@ -31,7 +31,7 @@ else:
         return next_start - current_end <= dist
 
     cluster_number = 1
-    for i, group in intergenic_sno.groupby('seqname'):  # groupby chr
+    for i, group in intergenic_sno.groupby(['seqname', 'strand']):  # groupby chr and strand
         current_cluster_end = group.iloc[0]['end']
         cluster_gene_ids = []
         index = 0
